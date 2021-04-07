@@ -107,7 +107,7 @@ const PayrollForm = (props) => {
         }
 
         employee.addEmployee(object).then(data => {
-            console.log(data);
+            console.log("data added successfully");
             props.history.push('')
         }).catch(err => {
             console.log("err while Add");
