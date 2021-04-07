@@ -71,6 +71,19 @@
       "notes": "all rounder",
       "id": 1604589731063,
       "startDate": "5 Jan 2019"
+    },
+    {
+      "name": "Aarti",
+      "profilePic": "../../assets/Ellipse -7.png",
+      "gender": "female",
+      "salary": "25000",
+      "department": [
+        "Sales",
+        "Engineer"
+      ],
+      "notes": "hard working",
+      "id": 1604589731064,
+      "startDate": "15 Jun 2019"
     }
   ]
 }
