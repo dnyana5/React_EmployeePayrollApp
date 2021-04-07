@@ -5,10 +5,10 @@ import profile3 from '../../assets/Ellipse -8.png';
 import profile4 from '../../assets/Ellipse -7.png';
 import './payroll-form.scss';
 import logo from '../../assets/logo.png'
-//import EmployeeService from '../../services/EmployeeService'
+import EmployeeService from '../../services/EmployeeService'
 import { withRouter } from 'react-router-dom'
 
-//const employeeService = new EmployeeService();
+const employee = new EmployeeService();
 const PayrollForm = (props) => {
     let intialValue = {
         name: '',
@@ -74,11 +74,11 @@ const PayrollForm = (props) => {
             isError = true;
         }
         if (formValue.gender.length < 1) {
-            error.name = 'gender is required field';
+            error.gender = 'gender is required field';
             isError = true;
         }
         if (formValue.salary.length < 1) {
-            error.name = 'salary is required field';
+            error.salary = 'salary is required field';
             isError = true;
         }
         if (formValue.profileUrl.length < 1) {
@@ -86,7 +86,7 @@ const PayrollForm = (props) => {
             isError = true;
         }
         if (formValue.departmentValue.length < 1) {
-            error.name = 'department is required field';
+            error.department = 'department is required field';
             isError = true;
         }
         await setForm({ ...formValue, error: error });
@@ -95,31 +95,28 @@ const PayrollForm = (props) => {
     const save = async (event) => {
         event.preventDefault();
         console.log("save");
-
-        if (await validData()) {
-            console.log('error', formValue);
-            return;
-        }
         let object = {
-            "name": formValue.name,
-            "profilePic": formValue.profileUrl,
-            "gender": formValue.gender,
-            "salary": formValue.salary,
-            "department": formValue.departmentValue,
-            "notes": formValue.notes,
-            "id": formValue.id,
-            "startDate": formValue.day + " " + formValue.month + " " + formValue.year
+            name: formValue.name,
+            profilePic: formValue.profileUrl,
+            gender: formValue.gender,
+            salary: formValue.salary,
+            department: formValue.departmentValue,
+            notes: formValue.notes,
+            id: formValue.id,
+            startDate: formValue.day + " " + formValue.month + " " + formValue.year
         }
 
-        /*employeeService.addEmployee(object).then(data => {
+        employee.addEmployee(object).then(data => {
             console.log(data);
+            props.history.push('')
         }).catch(err => {
             console.log("err while Add");
-        })*/
+        })
     }
     const reset = () => {
         setForm({ ...intialValue, id: formValue.id, inUpdate: formValue.isUpdate });
-    };
+        console.log(formValue);
+    }
     return (
         <div className="payroll-main">
             <header className="header-content header">

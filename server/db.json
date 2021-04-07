@@ -1,52 +1,76 @@
 {
-    "employee": [
-      {
-        "name": "mohit kumar ",
-        "gender": "male",
-        "departMent": [
-          "HR"
-        ],
-        "salary": "30000",
-        "startDate": "1 Jan 2020",
-        "notes": "",
-        "id": 1604589551457,
-        "profileUrl": "../assets/profile-images/Ellipse 1.png"
-      },
-      {
-        "name": "Sachin",
-        "gender": "male",
-        "departMent": [
-          "HR"
-        ],
-        "salary": "30000",
-        "startDate": "1 Jan 2020",
-        "notes": "",
-        "id": 1604589594363,
-        "profileUrl": "../assets/profile-images/Ellipse 1.png"
-      },
-      {
-        "name": "Amit",
-        "gender": "male",
-        "departMent": [
-          "HR"
-        ],
-        "salary": "30000",
-        "startDate": "1 Jan 2020",
-        "notes": "",
-        "id": 1604589699566,
-        "profileUrl": "../assets/profile-images/Ellipse -3.png"
-      },
-      {
-        "name": "Raj",
-        "gender": "male",
-        "departMent": [
-          "HR"
-        ],
-        "salary": "30000",
-        "startDate": "1 Jan 2020",
-        "notes": "",
-        "id": 1604589731061,
-        "profileUrl": "../assets/profile-images/Ellipse -3.png"
-      }
-    ]
-  }
+  "employee": [
+    {
+      "name": "mohit kumar ",
+      "gender": "male",
+      "departMent": [
+        "HR"
+      ],
+      "salary": "30000",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589551457,
+      "profileUrl": "../assets/profile-images/Ellipse 1.png"
+    },
+    {
+      "name": "Sachin",
+      "gender": "male",
+      "departMent": [
+        "HR"
+      ],
+      "salary": "30000",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589594363,
+      "profileUrl": "../assets/profile-images/Ellipse 1.png"
+    },
+    {
+      "name": "Amit",
+      "gender": "male",
+      "departMent": [
+        "HR"
+      ],
+      "salary": "30000",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589699566,
+      "profileUrl": "../assets/profile-images/Ellipse -3.png"
+    },
+    {
+      "name": "Raj",
+      "gender": "male",
+      "departMent": [
+        "HR"
+      ],
+      "salary": "30000",
+      "startDate": "1 Jan 2020",
+      "notes": "",
+      "id": 1604589731061,
+      "profileUrl": "../assets/profile-images/Ellipse -3.png"
+    },
+    {
+      "name": "Alexa",
+      "profilePic": "../../assets/Ellipse -7.png",
+      "gender": "female",
+      "salary": "1000",
+      "department": [
+        "Sales"
+      ],
+      "notes": "test",
+      "id": 1604589731062,
+      "startDate": "4 Jan 2019"
+    },
+    {
+      "name": "Tina",
+      "profilePic": "../../assets/Ellipse -1.png",
+      "gender": "female",
+      "salary": "50000",
+      "department": [
+        "Sales"
+      ],
+      "notes": "all rounder",
+      "id": 1604589731063,
+      "startDate": "5 Jan 2019"
+    }
+  ]
+}
